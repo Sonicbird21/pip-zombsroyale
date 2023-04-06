@@ -1,3 +1,4 @@
-import zombsroyale.api as zr
+import zombsroyale as zr
 
-user = zr.ApiUser("ebe0cf6bdd8d11b6198155a7fd7989f7")
+shop = zr.ApiShop()
+for i in shop.packs: print(i.__dict__)
