@@ -1,4 +1,4 @@
-from .ApiIap import ApiIap
+from zombsroyale import ApiIap
 
 class ApiIapDeal(ApiIap):
     def __init__(self, iap: dict) -> None:

@@ -1,9 +1,5 @@
 import requests
-from .ApiLeaderboardTime import ApiLeaderboardTime
-from .ApiLeaderboardMode import ApiLeaderboardMode
-from .ApiLeaderboardCategory import ApiLeaderboardCategory
-from .ApiLeaderboardPlayer import ApiLeaderboardPlayer
-from .ApiLeaderboardUser import ApiLeaderboardUser
+from zombsroyale import ApiLeaderboardTime, ApiLeaderboardMode, ApiLeaderboardCategory, ApiLeaderboardPlayer, ApiLeaderboardUser
 
 class ApiLeaderboard:
     def __init__(self, time:ApiLeaderboardTime, mode:ApiLeaderboardMode, category:ApiLeaderboardCategory) -> None:

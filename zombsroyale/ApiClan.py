@@ -1,5 +1,4 @@
-#from .ApiChatMessage import ApiChatMessage
-#from .ApiClanMember import ApiClanMember
+#from .zombsroyale import ApiChatMessage, ApiClanMember
 
 class ApiClan:
     def __init__(self, clan:dict) -> None:

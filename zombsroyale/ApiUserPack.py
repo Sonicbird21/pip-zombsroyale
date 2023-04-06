@@ -1,4 +1,4 @@
-from .ApiDate import ApiDate
+from zombsroyale import ApiDate
 
 class ApiUserPack:
     def __init__(self, pack:dict) -> None:

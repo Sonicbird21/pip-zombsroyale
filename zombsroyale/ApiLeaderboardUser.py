@@ -1,4 +1,4 @@
-from .ApiLeaderboardPlayer import ApiLeaderboardPlayer
+from zombsroyale import ApiLeaderboardPlayer
 
 class ApiLeaderboardUser(ApiLeaderboardPlayer):
     def __init__(self, player: dict) -> None:

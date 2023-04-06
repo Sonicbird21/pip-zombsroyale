@@ -3,4 +3,4 @@ class InvalidUserkeyError(Exception):
         self.userkey = userkey
 
     def __str__(self):
-        return f"Provided login token: {self.userkey} is not a valid userkey."
+        return f"Supplied key: {self.userkey} is not a valid userkey."

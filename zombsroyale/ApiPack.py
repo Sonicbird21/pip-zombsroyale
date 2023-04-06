@@ -1,4 +1,4 @@
-from .ApiPackReward import ApiPackReward
+from zombsroyale import ApiPackReward
 
 class ApiPack:
     def __init__(self, pack:dict) -> None:

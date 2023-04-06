@@ -1,5 +1,4 @@
-from .ApiDate import ApiDate
-from .ApiUserReward import ApiUserReward
+from zombsroyale import ApiDate, ApiUserReward
 
 class ApiIap:
     def __init__(self, iap:dict) -> None:

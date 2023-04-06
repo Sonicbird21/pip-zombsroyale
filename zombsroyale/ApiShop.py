@@ -1,9 +1,5 @@
 import requests
-from .ApiShopSection import ApiShopSection
-from .ApiItem import ApiItem
-from .ApiPack import ApiPack
-from .ApiTimedDeal import ApiTimedDeal
-from .ApiIap import ApiIap
+from zombsroyale import ApiItem, ApiPack, ApiTimedDeal, ApiIap
 
 class ApiShop:
     def __init__(self) -> None:

@@ -1,4 +1,4 @@
-from .ApiUserUpcomingReward import ApiUserUpcomingReward
+from zombsroyale import ApiUserUpcomingReward
 
 class ApiUserProgression:
     def __init__(self, progression:dict) -> None:
