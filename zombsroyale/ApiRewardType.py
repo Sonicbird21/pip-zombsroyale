@@ -1,6 +1,6 @@
 class ApiRewardType:
     REWARD_FIRST = 'first'
-    REWARD_GIFT = 'first'
+    REWARD_GIFT = 'gift'
     REWARD_RECURRING = 'recurring'
     REWARD_BONUS = 'bonus'
     REWARD_INSTAGRAM = 'instagram'

@@ -15,6 +15,6 @@ class ApiIap:
         self.can_purchase:bool = iap['can_purchase']
         self.rewards:list[ApiUserReward] = []
         for reward in iap['rewards']: self.rewards.append(ApiUserReward(reward))
-        self.created:ApiDate = ApiDate(iap['created']['date'], iap['created']['timezone_type'], iap['created']['timezone'])
-        self.updated:ApiDate = ApiDate(iap['updated']['date'], iap['updated']['timezone_type'], iap['updated']['timezone'])
+        #self.created:ApiDate = ApiDate(iap['created'])
+        #self.updated:ApiDate = ApiDate(iap['updated'])
 

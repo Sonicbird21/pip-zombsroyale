@@ -28,10 +28,10 @@ class ApiUser:
         self.coins:int = temp['user']['coins']
         self.gems:int = temp['user']['gems']
         self.status:str = temp['user']['status']
-        self.created:ApiDate = ApiDate(temp['user']['created']['date'], temp['user']['created']['timezone_type'], temp['user']['created']['timezone'])
-        self.updated:ApiDate = ApiDate(temp['user']['updated']['date'], temp['user']['updated']['timezone_type'], temp['user']['updated']['timezone'])
+        self.created:ApiDate = ApiDate(temp['user']['created'])
+        self.updated:ApiDate = ApiDate(temp['user']['updated'])
         self.key:str = temp['user']['key']
-        self.keyExpires:ApiDate = ApiDate(temp['user']['keyExpires']['date'], temp['user']['keyExpires']['timezone_type'], temp['user']['keyExpires']['timezone'])
+        self.keyExpires:ApiDate = ApiDate(temp['user']['keyExpires'])
         self.progression:ApiUserProgression = ApiUserProgression(temp['user']['progression'])
         self.clans:list[ApiClan] = []
         for clan in temp['user']['clans']: self.clans.append(ApiClan(clan))
@@ -48,10 +48,12 @@ class ApiUser:
         self.__init__(self.key)
 
     def GetUser(self) -> dict:
+        """API Endpoint: https://www.zombsroyale.io/api/user/{userKey}"""
         res = requests.get(f"https://www.zombsroyale.io/api/user/{self.key}")
         return res.json()
     
     def BuyItem(self, itemId:int, quantity:int) -> dict:
+        """API Endpoint: https://www.zombsroyale.io/api/user/{userKey}/buy?itemId={itemId}&quantity={quantity}"""
         res = requests.post(f"https://www.zombsroyale.io/api/user/{self.key}/buy", params={"itemId": itemId, "quantity": quantity})
         return res.json()
     
